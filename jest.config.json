@@ -4,7 +4,10 @@
   "transformIgnorePatterns": [
     "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
   ],
-  "setupFiles": ["./async-storage-config-jest.js"],
+  "setupFiles": [
+    "./async-storage-config-jest.js",
+    "./react-native-safe-area-context-config-jest.js"
+  ],
   "transform": {
     "^.+\\.jsx?$": "babel-jest",
     "^.+\\.svg$": "jest-transformer-svg"
