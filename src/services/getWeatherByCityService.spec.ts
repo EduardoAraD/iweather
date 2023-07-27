@@ -1,5 +1,5 @@
 import { api } from "./api"
-import { mockWeatherAPIResponse } from "../__tests__/mocks/api/mockWeatherAPIResponse"
+import { mockWeatherAPIResponse } from "../../__tests__/mocks/api/mockWeatherAPIResponse"
 import { getWeatherByCityService } from "./getWeatherByCityService";
 
 describe('Service: getWeatherByCityService', () => {
