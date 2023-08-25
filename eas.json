@@ -1,0 +1,20 @@
+{
+  "cli": {
+    "version": ">= 4.1.2"
+  },
+  "build": {
+    "preview": {
+      "android": {
+        "distribution": "internal"
+      },
+      "env": {
+        "EXPO_PUBLIC_WEATHER_APP_ID": "0acf36705ae0983f201e0bab80559067"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_WEATHER_APP_ID": "0acf36705ae0983f201e0bab80559067"
+      }
+    }
+  }
+}
