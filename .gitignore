@@ -18,3 +18,5 @@ web-build/
 
 .env
 __tests__/coverage/
+
+iweather.app/
