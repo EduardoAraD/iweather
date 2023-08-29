@@ -25,8 +25,7 @@ describe('Screen: Dashboard', () => {
 
     render(<Dashboard />);
 
-    const cityName = await waitFor(() => screen.findByText(/caucaia/i));
-    expect(cityName).toBeTruthy();
+    await waitFor(() => expect(screen.findByText(/caucaia/i, {}, { timeout: 3000 })).toBeTruthy());
   })
 
   it('should be show another selected weather city.', async () => {
