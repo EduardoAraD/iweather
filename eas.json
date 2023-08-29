@@ -1,6 +1,7 @@
 {
   "cli": {
-    "version": ">= 4.1.2"
+    "version": ">= 4.1.2",
+    "appVersionSource": "remote"
   },
   "build": {
     "preview": {
@@ -10,13 +11,18 @@
         "autoIncrement": "versionCode"
       },
       "ios": {
-        "simulator": true
+        "simulator": true,
+        "autoIncrement": "buildNumber"
       }
     },
     "production": {
       "autoIncrement": true,
       "android": {
         "autoIncrement": "versionCode"
+      },
+      "ios": {
+        "image": "latest",
+        "autoIncrement": "buildNumber"
       }
     }
   },
@@ -26,6 +32,10 @@
         "track": "internal",
         "serviceAccountKeyPath": "./google-services.json",
         "releaseStatus": "draft"
+      },
+      "ios": {
+        "appleId": "araujocarlos893@gmail.com",
+        "ascAppId": ""
       }
     }
   }
